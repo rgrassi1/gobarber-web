@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { shade } from 'polished';
-import image from '../../assets/sign-in-background.png';
+import image from '../../assets/sign-up-background.png';
 
 export const Background = styled.div`
   background-color: #312e38;
