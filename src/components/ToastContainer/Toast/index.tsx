@@ -37,9 +37,7 @@ const Toast: React.FC<IToastProps> = ({ message, style }) => {
       {icons[message.type || 'info']}
       <div>
         <strong>{message.title}</strong>
-        {message.description && (
-          <p>Não foi possível fazer login na aplicação</p>
-        )}
+        {message.description && <p>{message.description}</p>}
       </div>
       <button onClick={() => removeToast(message.id)} type="button">
         <FiXCircle size={18} />
