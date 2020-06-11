@@ -40,6 +40,7 @@
           "prefixWithI": "always"
         }
       ],
+      "@typescript-eslint/camelcase": "off",
       "react-hooks/exhaustive-deps": "warn",
       "no-unused-expressions": "off",
       "react/jsx-filename-extension": [1, {"extensions": [".tsx"] }],
