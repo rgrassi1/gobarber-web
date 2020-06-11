@@ -1,13 +1,13 @@
 import styled, { css } from 'styled-components';
 import Tooltip from '../Tooltip';
 
-interface ContainerProps {
+interface IContainerProps {
   isFocused: boolean;
   isFilled: boolean;
   isWithError: boolean;
 }
 
-export const Container = styled.div<ContainerProps>`
+export const Container = styled.div<IContainerProps>`
   display: flex;
   align-items: center;
   padding: 16px;
