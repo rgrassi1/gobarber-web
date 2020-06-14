@@ -8,7 +8,7 @@ export const Background = styled.div`
 export const Container = styled.div`
   max-width: 960px;
   width: 100%;
-  margin: 48px auto;
+  margin: 24px auto;
 `;
 
 export const Schedule = styled.div`
@@ -32,7 +32,7 @@ export const Schedule = styled.div`
 `;
 
 export const NextAppointment = styled.div`
-  margin-top: 32px;
+  margin-top: 24px;
 
   > strong {
     color: #999591;
@@ -42,7 +42,7 @@ export const NextAppointment = styled.div`
 
   > div {
     background: #3e3b47;
-    margin-top: 16px;
+    margin-top: 8px;
     padding: 16px 24px;
     border-radius: 8px;
     position: relative;
@@ -59,25 +59,24 @@ export const NextAppointment = styled.div`
   }
 
   > div > img {
-    height: 64px;
-    width: 64px;
+    height: 48px;
+    width: 48px;
     border-radius: 50%;
+    vertical-align: middle;
   }
 
   > div > div {
     display: inline-block;
     margin-left: 16px;
-    position: absolute;
-    top: calc(50% - 12px);
-    line-height: 24px;
-    width: calc(100% - 128px);
-    /* width: calc(100% - 48px - 64px - 16px); */
+    line-height: 16px;
+    width: calc(100% - 48px - 16px);
+    vertical-align: middle;
   }
 
   > div > div > strong {
     display: inline-block;
     width: 50%;
-    font-size: 1.225em;
+    font-size: 1.125em;
   }
 
   > div > div > span {
@@ -85,7 +84,7 @@ export const NextAppointment = styled.div`
     width: 50%;
     text-align: end;
     color: #999591;
-    font-size: 1.225em;
+    font-size: 1.125em;
   }
 
   > div > div > span > svg {
@@ -95,7 +94,7 @@ export const NextAppointment = styled.div`
 `;
 
 export const Shift = styled.div`
-  margin-top: 48px;
+  margin-top: 32px;
 
   > strong {
     display: block;
@@ -105,5 +104,42 @@ export const Shift = styled.div`
     border-bottom: 1px solid #3e3b47;
     padding-bottom: 8px;
     margin-bottom: 16px;
+  }
+`;
+
+export const Appointment = styled.div`
+  > span {
+    display: inline-block;
+    width: 10%;
+    color: #f4ede8;
+  }
+
+  > span > svg {
+    vertical-align: middle;
+    color: #ff9000;
+  }
+
+  > div {
+    display: inline-block;
+    padding: 8px 16px;
+    background: #3e3b47;
+    border-radius: 8px;
+    width: 90%;
+  }
+
+  & + div {
+    margin-top: 8px;
+  }
+
+  > div > img {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    vertical-align: middle;
+  }
+
+  > div > strong {
+    margin-left: 16px;
+    vertical-align: middle;
   }
 `;

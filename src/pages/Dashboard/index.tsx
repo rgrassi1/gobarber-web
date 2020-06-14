@@ -7,6 +7,7 @@ import {
   Schedule,
   NextAppointment,
   Shift,
+  Appointment,
 } from './styles';
 
 export default function Dashboard() {
@@ -40,9 +41,48 @@ export default function Dashboard() {
           </NextAppointment>
           <Shift>
             <strong>Manhã</strong>
+            <Appointment>
+              <span>
+                <FiClock />
+                &nbsp; 08:00
+              </span>
+              <div>
+                <img
+                  src="https://avatars2.githubusercontent.com/u/29978669?s=460&u=2154777fd9f76fc5cbdc2a275276d2bd830de78e&v=4"
+                  alt="Rodrigo Grassi"
+                />
+                <strong>Rodrigo Grassi</strong>
+              </div>
+            </Appointment>
+            <Appointment>
+              <span>
+                <FiClock />
+                &nbsp; 09:00
+              </span>
+              <div>
+                <img
+                  src="https://avatars2.githubusercontent.com/u/29978669?s=460&u=2154777fd9f76fc5cbdc2a275276d2bd830de78e&v=4"
+                  alt="Rodrigo Grassi"
+                />
+                <strong>Rodrigo Grassi</strong>
+              </div>
+            </Appointment>
           </Shift>
           <Shift>
             <strong>Tarde</strong>
+            <Appointment>
+              <span>
+                <FiClock />
+                &nbsp; 13:00
+              </span>
+              <div>
+                <img
+                  src="https://avatars2.githubusercontent.com/u/29978669?s=460&u=2154777fd9f76fc5cbdc2a275276d2bd830de78e&v=4"
+                  alt="Rodrigo Grassi"
+                />
+                <strong>Rodrigo Grassi</strong>
+              </div>
+            </Appointment>
           </Shift>
         </Schedule>
       </Container>

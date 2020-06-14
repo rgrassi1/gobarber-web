@@ -11,7 +11,7 @@ export const Container = styled.div`
   margin: 0 auto;
 
   > img {
-    height: 80px;
+    height: 64px;
     float: left;
     margin-right: 80px;
   }
@@ -31,8 +31,8 @@ export const Container = styled.div`
 
 export const Profile = styled.div`
   float: left;
-  height: 80px;
-  padding: 16px 0 8px 0;
+  height: 64px;
+  padding: 8px 0 0 0;
 
   > img {
     height: 56px;
