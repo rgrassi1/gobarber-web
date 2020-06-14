@@ -2,11 +2,12 @@ import styled from 'styled-components';
 
 export const Background = styled.div`
   background: #28262e;
-  padding: 24px 0;
+  padding: 16px 0;
 `;
 
 export const Container = styled.div`
   max-width: 960px;
+  width: 100%;
   margin: 0 auto;
 
   > img {
