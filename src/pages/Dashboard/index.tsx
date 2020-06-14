@@ -1,7 +1,13 @@
 import React from 'react';
 import { FiClock } from 'react-icons/fi';
 import Header from '../../components/Header';
-import { Background, Container, Schedule } from './styles';
+import {
+  Background,
+  Container,
+  Schedule,
+  NextAppointment,
+  Shift,
+} from './styles';
 
 export default function Dashboard() {
   return (
@@ -16,7 +22,7 @@ export default function Dashboard() {
             <span>Segunda-feira</span>
           </p>
 
-          <div>
+          <NextAppointment>
             <strong>Atendimento a seguir</strong>
             <div>
               <img
@@ -31,7 +37,13 @@ export default function Dashboard() {
                 </span>
               </div>
             </div>
-          </div>
+          </NextAppointment>
+          <Shift>
+            <strong>Manhã</strong>
+          </Shift>
+          <Shift>
+            <strong>Tarde</strong>
+          </Shift>
         </Schedule>
       </Container>
     </Background>

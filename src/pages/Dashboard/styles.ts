@@ -29,18 +29,18 @@ export const Schedule = styled.div`
     margin: 0 8px;
     border-left: 1px solid #ff9000;
   }
+`;
 
-  > div {
-    margin-top: 32px;
-  }
+export const NextAppointment = styled.div`
+  margin-top: 32px;
 
-  > div > strong {
+  > strong {
     color: #999591;
     font-size: 1.25em;
     font-weight: 400;
   }
 
-  > div > div {
+  > div {
     background: #3e3b47;
     margin-top: 16px;
     padding: 16px 24px;
@@ -48,7 +48,7 @@ export const Schedule = styled.div`
     position: relative;
   }
 
-  > div > div::before {
+  > div::before {
     position: absolute;
     left: 0;
     top: 10%;
@@ -58,13 +58,13 @@ export const Schedule = styled.div`
     content: '';
   }
 
-  > div > div > img {
+  > div > img {
     height: 64px;
     width: 64px;
     border-radius: 50%;
   }
 
-  > div > div > div {
+  > div > div {
     display: inline-block;
     margin-left: 16px;
     position: absolute;
@@ -74,13 +74,13 @@ export const Schedule = styled.div`
     /* width: calc(100% - 48px - 64px - 16px); */
   }
 
-  > div > div > div > strong {
+  > div > div > strong {
     display: inline-block;
     width: 50%;
     font-size: 1.225em;
   }
 
-  > div > div > div > span {
+  > div > div > span {
     display: inline-block;
     width: 50%;
     text-align: end;
@@ -88,8 +88,22 @@ export const Schedule = styled.div`
     font-size: 1.225em;
   }
 
-  > div > div > div > span > svg {
+  > div > div > span > svg {
     vertical-align: middle;
     color: #ff9000;
+  }
+`;
+
+export const Shift = styled.div`
+  margin-top: 48px;
+
+  > strong {
+    display: block;
+    color: #999591;
+    font-size: 1.5em;
+    line-height: 16px;
+    border-bottom: 1px solid #3e3b47;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
   }
 `;
