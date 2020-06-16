@@ -63,8 +63,8 @@ export const NextAppointment = styled.div`
   }
 
   > div > img {
-    height: 48px;
     width: 48px;
+    height: 48px;
     border-radius: 50%;
     vertical-align: middle;
   }
@@ -100,6 +100,10 @@ export const NextAppointment = styled.div`
 export const Shift = styled.div`
   margin-top: 32px;
 
+  > p {
+    color: #999591;
+  }
+
   > strong {
     display: block;
     color: #999591;
@@ -121,6 +125,7 @@ export const Appointment = styled.div`
   > span > svg {
     vertical-align: middle;
     color: #ff9000;
+    margin-right: 8px;
   }
 
   > div {
